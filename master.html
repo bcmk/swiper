@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build-master-5d15292/swiper-bundle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #eeeeee !important;
+        }
+
+        .pic {
+            height: 128px;
+            width: 128px;
+        }
+
+        .pic:not([src]) {
+            opacity: 0;
+        }
+
+        .swiper-slide {
+            width: auto;
+        }
+
+        .lazy-preloader {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -22px;
+            margin-top: -20px;
+            z-index: 10;
+            border-radius: 50%;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="swiper-container bg-white pt-2 my-3 w-100">
+        <div class="swiper-wrapper no-select">
+            <div class="swiper-slide">
+                <img data-src="numbers/1.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/2.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/3.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/4.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/5.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/6.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/7.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/8.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/9.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/10.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/11.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/12.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/13.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/14.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/15.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/16.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/17.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/18.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/19.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="numbers/20.png" alt="" class="pic swiper-lazy">
+                <div class="lazy-preloader"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="build-master-5d15292/swiper-bundle.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        freeMode: true,
+        lazy: {
+            checkInView: true,
+            loadPrevNext: true,
+            preloaderClass: 'lazy-preloader',
+            loadOnTransitionStart: true,
+        },
+        watchSlidesVisibility: true,
+        preloadImages: false,
+        grabCursor: true,
+    });
+</script>
+</body>
+</html>
